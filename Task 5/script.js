@@ -34,4 +34,7 @@ function filterAdults(users) {
   return valid;
 }
 
+const adults = filterAdults(users);
+
+console.log(adults);
 
