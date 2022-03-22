@@ -20,13 +20,18 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
+// Grazina amziaus vidurki
 const metai = users.map(users => users.age)
 console.log(metai)
 
 const vidurkis = function (a, b) {
-  let sum = 0
+  let suma = 0
   for (let i = 0; i < metai.length; i++) {
     return metai.reduce((a, b) => a + b) / metai.length
   }
 }
 console.log(vidurkis(metai))
+
+// Grazina visu "users" vardus
+const getUsersNames = users.map(users => users.name)
+console.log(getUsersNames);
