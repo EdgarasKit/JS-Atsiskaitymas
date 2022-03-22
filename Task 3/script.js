@@ -14,4 +14,13 @@ const ENDPOINT = 'https://api.github.com/users';
 
 fetch(ENDPOINT)
 .then ((res) => res.json())
-.then ((data) => {});
+.then ((data) => {
+    data.forEach(element => {
+        document.querySelector("#output").innerHTML += `
+        <div>
+        <h2> User login: ${element.login} </h2>
+        <img src="${element.avatar_url}">
+        </div>
+        `;
+    });
+  });
