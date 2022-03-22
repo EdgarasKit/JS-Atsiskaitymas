@@ -27,3 +27,22 @@
   margin-top: 50px;
   color: #333;
 }
+
+.masinos {
+  width: 600px;
+}
+
+.masinos h1{
+  background-color: green;
+  color: white;
+}
+
+.masinos p{
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.masinos p span {
+  background-color: red;
+  color: white;
+}
