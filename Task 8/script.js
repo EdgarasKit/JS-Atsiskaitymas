@@ -25,3 +25,9 @@ class Calculator {
         return atsakymas4;
     };
 }
+
+let skaiciuoti = new Calculator();
+console.log(`sudeties veiksmas 10 + 2 = ${skaiciuoti.sum(10, 2)}`);
+console.log(`atimties veiksmas 10 - 2 = ${skaiciuoti.subtraction(10 ,2)}`);
+console.log(`daugybos veiksmas 10 * 2 = ${skaiciuoti.multiplication(10, 2)}`);
+console.log(`dalybos veiksmas 10 / 2 = ${skaiciuoti.division(10, 2)}`);
