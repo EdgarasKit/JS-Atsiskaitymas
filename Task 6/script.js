@@ -20,8 +20,13 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-let getUserAverageAge = (masyvas) => {
-  let amziausVidurkis = 0;
-  masyvas.forEach(item => amziausVidurkis += item.age)
-  return (amziausVidurkis / masyvas.legth).toFixed(0)
+const metai = users.map(users => users.age)
+console.log(metai)
+
+const vidurkis = function (a, b) {
+  let sum = 0
+  for (let i = 0; i < metai.length; i++) {
+    return metai.reduce((a, b) => a + b) / metai.length
+  }
 }
+console.log(vidurkis(metai))
