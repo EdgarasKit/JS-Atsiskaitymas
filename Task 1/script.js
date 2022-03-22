@@ -11,5 +11,11 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 
 let converter = document.querySelector(`form`).addEventListener(`click`, e => {
     e.preventDefault();
-    
+    let isvestis = document.querySelector(`#search`).value;
+    document.querySelector(`#output`).innerHTML = `
+    Svoris kg: ${isvestis} <br>
+    Svoris svarais: ${isvestis * 2.2046} <br>
+    Svoris gramais: ${isvestis * 0.001} <br>
+    Svoris unicijomis: ${isvestis * 35.274}
+    `
 });
