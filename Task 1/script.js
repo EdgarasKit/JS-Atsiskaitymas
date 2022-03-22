@@ -8,3 +8,8 @@ pamatyti jo pateikto svorio konvertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+let converter = document.querySelector(`form`).addEventListener(`click`, e => {
+    e.preventDefault();
+    
+});
