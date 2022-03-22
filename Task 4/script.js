@@ -10,3 +10,11 @@ bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+
+fetch(ENDPOINT)
+  .then(res => res.json())
+  .then(data => {
+      data.map(element => {
+          
+      })
+  })
