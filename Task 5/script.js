@@ -23,3 +23,15 @@ const users = [
 let filterDogOwners = (masyvas) => {
   return masyvas.filter(item => item.hasDog)
 }
+
+function filterAdults(users) {
+  var valid = [];
+  for (var i in users) {
+    if (users[i].age >= 18) {   
+      valid.push(users[i]);
+    }
+  }
+  return valid;
+}
+
+
