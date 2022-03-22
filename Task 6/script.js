@@ -19,3 +19,9 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+let getUserAverageAge = (masyvas) => {
+  let amziausVidurkis = 0;
+  masyvas.forEach(item => amziausVidurkis += item.age)
+  return (amziausVidurkis / masyvas.legth).toFixed(0)
+}
