@@ -35,6 +35,5 @@ function filterAdults(users) {
 }
 
 const adults = filterAdults(users);
-
 console.log(adults);
 
