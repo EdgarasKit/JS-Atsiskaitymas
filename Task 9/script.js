@@ -14,10 +14,12 @@ class Movie {
         this.budget = budget;
     }
     wasExpensive() {
-        if (this.budget > 1000000000){
+        if (this.budget > 100000000){
             return true;
         } else {
             return false;
         }
     }
 }
+const filmas = new Movie("Avatar", "James Cameron", 2800000000)
+console.log(filmas.wasExpensive());
